@@ -53,6 +53,16 @@
             bindings = <&kp EQUAL>;
             key-positions = <24 25>;
         };
+
+        Language1 {
+            bindings = <&kp LANGUAGE_1>;
+            key-positions = <14 13 14>;
+        };
+
+        Language2 {
+            bindings = <&kp LANGUAGE_2>;
+            key-positions = <16 17>;
+        };
     };
 
     macros {
@@ -100,10 +110,10 @@
 
         ARROW {
             bindings = <
-&kp ESCAPE  &kp F1    &kp F2        &kp F3     &kp F4                                      &kp F5     &kp F6     &kp F7     &kp F8  &kp F9
-&trans      &trans    &kp UP_ARROW  &trans     &kp LANGUAGE_1  &kp LANGUAGE_2      &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
-&trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans          &trans              &trans  &trans     &trans     &trans     &trans  &kp C_VOLUME_UP
-&trans      &trans    &trans        &trans     &trans          &trans              &trans  &trans                                   &kp C_VOLUME_DOWN
+&kp ESCAPE  &kp F1    &kp F2        &kp F3     &kp F4                      &kp F5     &kp F6     &kp F7     &kp F8  &kp F9
+&trans      &trans    &kp UP_ARROW  &trans     &trans  &trans      &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans      &kp LEFT  &kp DOWN      &kp RIGHT  &trans  &trans      &trans  &trans     &trans     &trans     &trans  &kp C_VOLUME_UP
+&trans      &trans    &trans        &trans     &trans  &trans      &trans  &trans                                   &kp C_VOLUME_DOWN
             >;
 
             sensor-bindings = <&inc_dec_kp LC(PAGE_UP) LC(PAGE_DOWN)>;
