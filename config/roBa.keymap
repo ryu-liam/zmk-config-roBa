@@ -39,9 +39,9 @@
             key-positions = <12 13>;
         };
 
-        muhennkann {
-            bindings = <&to_layer_0 INT_MUHENKAN>;
-            key-positions = <11 10>;
+        escape {
+            bindings = <&to_layer_0 ESCAPE>;
+            key-positions = <0 1>;
         };
 
         double_quotation {
