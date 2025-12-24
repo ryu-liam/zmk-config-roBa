@@ -86,7 +86,9 @@
 &kp LCTRL         &kp LALT  &kp LEFT_COMMAND  &kp LEFT_COMMAND  &kp SPACE  &lt_to_layer_0 2 C_AC_NEXT_KEYBOARD_LAYOUT_SELECT      &kp BACKSPACE  &lt 1 ENTER                             &kp LS(LG(N5))
             >;
 
-            sensor-bindings = <&inc_dec_kp PG_UP PAGE_DOWN>, <&inc_dec_kp 0 0>;
+            sensor-bindings =
+                <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>,
+                <&inc_dec_kp 0 0>;
         };
 
         NUM {
