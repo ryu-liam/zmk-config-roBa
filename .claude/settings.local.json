@@ -1,8 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "Bash(zmk --version:*)",
-      "Bash(zmk west build --help:*)"
+      "Bash(gh run list:*)",
+      "Bash(gh run view:*)"
     ]
   }
 }
