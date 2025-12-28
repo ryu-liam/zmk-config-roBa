@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(zmk --version:*)",
+      "Bash(zmk west build --help:*)"
+    ]
+  }
+}
