@@ -103,16 +103,16 @@
 
         NUM {
             bindings = <
-&kp TILDE         &kp EXCLAMATION    &kp AT_SIGN        &kp HASH        &kp DOLLAR                                           &kp MINUS  &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS
-&kp PERCENT       &kp CARET          &kp AMPERSAND      &kp ASTERISK    &kp UNDERSCORE  &kp LC(LA(KP_NUMBER_0))      &trans   &kp SLASH  &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp ASTERISK
-&kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp LEFT_BRACE     &kp RIGHT_BRACE &kp BACKSLASH   &kp EQUAL                    &trans   &kp PERIOD &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp EQUAL
-&kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans   &trans          &trans                       &trans   &kp N0                                                       &trans
+&kp TILDE         &kp EXCLAMATION       &kp AT_SIGN            &kp HASH         &kp DOLLAR                         &trans     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp PLUS
+&kp PERCENT       &kp CARET             &kp AMPERSAND          &trans           &trans         &trans      &trans  &trans     &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp MINUS
+&kp LEFT_BRACKET  &kp RIGHT_BRACKET     &kp LEFT_BRACE         &kp RIGHT_BRACE  &kp BACKSLASH  &trans      &trans  &kp KP_N0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp ASTERISK
+&kp PIPE          &kp LEFT_PARENTHESIS  &kp RIGHT_PARENTHESIS  &trans           &trans         &trans      &trans  &trans                                                        &kp SLASH
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
-        ARROW {
+        Function {
             bindings = <
 &kp F1  &kp F2    &kp F3        &kp F4     &kp F5                                        &kp F6          &kp F7     &kp F8     &kp F9   &kp F10
 &trans  &trans    &kp UP_ARROW  &trans     &kp LC(UP_ARROW)  &trans      &trans          &mkp LCLK       &mkp MCLK  &mkp RCLK  &kp F11  &kp F12
