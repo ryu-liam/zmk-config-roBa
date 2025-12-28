@@ -120,7 +120,7 @@
 &trans  &trans    &trans        &trans     &trans            &trans      &kp LANGUAGE_1  &kp LANGUAGE_2                                 &kp C_VOLUME_DOWN
             >;
 
-            sensor-bindings = <&inc_dec_kp RA(LEFT) RA(RIGHT)>;
+            sensor-bindings = <&inc_dec_kp LG(LA(LEFT)) LG(LA(RIGHT))>;
         };
 
         Bluetooth {
