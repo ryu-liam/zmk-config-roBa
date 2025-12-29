@@ -30,10 +30,9 @@
 };
 
 &trackball_listener {
-    // Functionレイヤー(layer 2)でCPIを1/2に下げ、縦スクロールのみに限定
     snipe {
         layers = <2>;
-        input-processors = <&zip_xy_scaler 1 2 &zip_scroll_x_limit>;
+        input-processors = <&zip_scroll_scaler 1 2 &zip_scroll_x_limit>;
     };
 };
 
