@@ -78,12 +78,12 @@
             key-positions = <24 25>;
         };
 
-        LCLK {
+        lclk {
             bindings = <&mkp LCLK>;
             key-positions = <17 18>;
         };
 
-        RCLK {
+        rclk {
             bindings = <&mkp RCLK>;
             key-positions = <18 19>;
         };
