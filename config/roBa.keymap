@@ -86,25 +86,24 @@
             compatible = "zmk,behavior-hold-tap";
             label = "LAYER_TAP_TO_0";
             bindings = <&mo>, <&to_layer_0>;
-
             #binding-cells = <2>;
             tapping-term-ms = <180>;
         };
 
-        scroll_up_down: behavior_sensor_rotate_mouse_wheel_up_down {
+        rotate_mouse_wheel_up_down: rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
+            label = "ROTATE_MOUSE_WHEEL_UP_DOWN"
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
             tap-ms = <20>;
         };
 
         alt_tab_rotate: alt_tab_rotate {
             compatible = "zmk,behavior-sensor-rotate";
+            label = "ALT_TAB_ROTATE"
             #sensor-binding-cells = <0>;
             bindings = <&kp LG(LA(LEFT))>, <&kp LG(LA(RIGHT))>;
-
-            tap-ms = <50>;
+            tap-ms = <100>;
         };
     };
 
@@ -119,7 +118,7 @@
 &kp LCTRL           &kp LALT  &trans  &mkp LCLK  &kp LEFT_COMMAND  &lt_to_layer_0 2 SPACE      &kp BACKSPACE           &lt 1 ENTER                             &kp LS(LG(N5))
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&rotate_mouse_wheel_up_down>;
         };
 
         NUM {
