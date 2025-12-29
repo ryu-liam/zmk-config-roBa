@@ -106,7 +106,7 @@
 &kp LCTRL           &kp LALT  &trans  &mkp LCLK  &kp LEFT_COMMAND  &lt_to_layer_0 2 SPACE      &kp BACKSPACE           &lt 1 ENTER                             &kp LS(LG(N5))
             >;
 
-            sensor-bindings = <&scroll_up_down>;
+            sensor-bindings = <&inc_dec_kp K_SCROLL_UP K_SCROLL_DOWN>;
         };
 
         NUM {
