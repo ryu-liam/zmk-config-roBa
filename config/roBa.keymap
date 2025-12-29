@@ -32,11 +32,13 @@
 };
 
 &trackball_listener {
-    // Functionレイヤー(layer 2)でスクロールモード：速度1/2
-
     scroll {
         layers = <2>;
-        input-processors = <&zip_xy_scaler 1 2 &zip_xy_to_scroll_mapper>;
+        input-processors = <
+          &zip_xy_to_scroll_mapper
+          &zip_scroll_x_scaler 0 1
+          zip_scroll_y_scaler 1 2
+        >;
     };
 };
 
