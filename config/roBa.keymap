@@ -14,7 +14,7 @@
 
 &trackball {
     automouse-layer = <4>;
-    // scroll-layersはInput Processorで代替するため削除
+    scroll-layers = <2>;
 
     // arrows {
     //     layers = <3>;
@@ -30,10 +30,10 @@
 };
 
 &trackball_listener {
-    // Functionレイヤー(layer 2)でスクロールモード：速度1/2、縦スクロールのみ
+    // Functionレイヤー(layer 2)でスクロールモード：速度1/2
     scroll {
         layers = <2>;
-        input-processors = <&zip_xy_scaler 1 2 &zip_xy_to_scroll_mapper &zip_scroll_x_limit>;
+        input-processors = <&zip_xy_scaler 1 2 &zip_xy_to_scroll_mapper>;
     };
 };
 
