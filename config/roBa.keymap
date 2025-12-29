@@ -91,12 +91,11 @@
             tapping-term-ms = <180>;
         };
 
-        rotate_mouse_wheel_up_down: rotate_mouse_wheel_up_down {
+        encoder_msc_down_up: encoder_msc_down_up {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "ROTATE_MOUSE_WHEEL_UP_DOWN";
+            label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
-
             tap-ms = <20>;
         };
 
@@ -121,7 +120,7 @@
 &kp LCTRL           &kp LALT  &trans  &kp LEFT_COMMAND  &lt_to_layer_0 2 SPACE  &kp LEFT_ALT         &kp BACKSPACE           &lt 1 ENTER                             &kp LS(LG(N5))
             >;
 
-            sensor-bindings = <&rotate_mouse_wheel_up_down>;
+            sensor-bindings = <&encoder_msc_down_up>;
         };
 
         NUM {
