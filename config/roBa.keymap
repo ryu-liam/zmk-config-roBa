@@ -115,7 +115,7 @@
             #sensor-binding-cells = <0>;
             bindings = <&kp LG(LA(LEFT))>, <&kp LG(LA(RIGHT))>;
 
-            tap-ms = <100>;
+            tap-ms = <20>;
         };
     };
 
