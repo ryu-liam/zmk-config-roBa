@@ -92,7 +92,7 @@
 
         rotate_mouse_wheel_up_down: rotate_mouse_wheel_up_down {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "ROTATE_MOUSE_WHEEL_UP_DOWN"
+            label = "ROTATE_MOUSE_WHEEL_UP_DOWN";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
             tap-ms = <20>;
@@ -100,7 +100,7 @@
 
         alt_tab_rotate: alt_tab_rotate {
             compatible = "zmk,behavior-sensor-rotate";
-            label = "ALT_TAB_ROTATE"
+            label = "ALT_TAB_ROTATE";
             #sensor-binding-cells = <0>;
             bindings = <&kp LG(LA(LEFT))>, <&kp LG(LA(RIGHT))>;
             tap-ms = <100>;
