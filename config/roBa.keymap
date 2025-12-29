@@ -3,6 +3,7 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
+#include <input/processors.dtsi>
 
 #define ZMK_MOUSE_DEFAULT_SCRL_VAL 100
 
@@ -12,8 +13,7 @@
 };
 
 &trackball {
-    // automouse-layer = <2>;
-
+    automouse-layer = <4>;
     scroll-layers = <2>;
 
     // arrows {
@@ -27,6 +27,14 @@
     //     wait-ms = <5>;
     //     tap-ms = <5>;
     // };
+};
+
+&trackball_listener {
+    // Functionレイヤー(layer 2)でCPIを1/2に下げ、縦スクロールのみに限定
+    snipe {
+        layers = <2>;
+        input-processors = <&zip_xy_scaler 1 2 &zip_scroll_x_limit>;
+    };
 };
 
 / {
@@ -136,6 +144,15 @@
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans        &trans        &trans        &trans        &trans
 &trans  &trans  &trans  &trans  &trans  &trans      &bootloader  &trans        &trans        &trans        &trans        &bt BT_CLR
 &trans  &trans  &trans  &trans  &trans  &trans      &trans       &trans                                                  &bt BT_CLR_ALL
+            >;
+        };
+
+        Mouse {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans                      &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &mkp LCLK  &mkp MCLK  &mkp RCLK  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans     &trans     &trans     &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans      &trans  &trans                                   &trans
             >;
         };
     };
