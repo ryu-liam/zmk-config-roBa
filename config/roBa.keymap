@@ -10,11 +10,13 @@
 
 &mt {
     flavor = "balanced";
-    quick-tap-ms = <0>;
+    quick-tap-ms = <150>;
+    tapping-term-ms = <150>;
 };
 
 &trackball {
     // automouse-layer = <4>;
+
     scroll-layers = <2>;
 
     // arrows {
@@ -32,6 +34,7 @@
 
 &trackball_listener {
     // 感度を1.5倍
+
     input-processors = <
       &zip_x_scaler 3 2
       &zip_y_scaler 3 2
@@ -102,6 +105,7 @@
             label = "ENCODER_MSC_DOWN_UP";
             #sensor-binding-cells = <0>;
             bindings = <&msc SCRL_DOWN>, <&msc SCRL_UP>;
+
             tap-ms = <20>;
         };
 
