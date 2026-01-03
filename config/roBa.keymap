@@ -34,8 +34,8 @@
 
 &trackball_listener {
     input-processors = <
-      &zip_x_scaler 3 2
-      &zip_y_scaler 3 2
+      &zip_x_scaler 2 1
+      &zip_y_scaler 2 1
     >;
 
     scroll {
