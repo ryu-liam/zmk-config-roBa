@@ -16,7 +16,6 @@
 
 &trackball {
     automouse-layer = <4>;
-
     scroll-layers = <2>;
 
     // arrows {
@@ -122,10 +121,10 @@
 
         default_layer {
             bindings = <
-&kp Q               &kp W     &kp E   &kp R                        &kp T                                                                            &kp Y        &kp U  &kp I      &kp O    &kp P
-&mt LEFT_CONTROL A  &kp S     &kp D   &kp F                        &kp G                   &mkp LCLK                        &kp SEMICOLON           &kp H        &kp J  &kp K      &kp L    &kp MINUS
-&mt LEFT_SHIFT Z    &kp X     &kp C   &kp V                        &kp B                   &kp EXCLAMATION                  &lt_to_layer_0 3 EQUAL  &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL           &kp LALT  &trans  &mt LEFT_COMMAND LANGUAGE_2  &lt_to_layer_0 2 SPACE  &mt LEFT_ALT LC(LANGUAGE_1)      &kp BACKSPACE           &lt 1 ENTER                             &trans
+&kp Q               &kp W     &kp E   &kp R                        &kp T                                                                   &kp Y        &kp U  &kp I      &kp O    &kp P
+&mt LEFT_CONTROL A  &kp S     &kp D   &kp F                        &kp G                   &mkp LCLK                        &kp SEMICOLON  &kp H        &kp J  &kp K      &kp L    &kp MINUS
+&mt LEFT_SHIFT Z    &kp X     &kp C   &kp V                        &kp B                   &kp EXCLAMATION                  &kp EQUAL      &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL           &kp LALT  &trans  &mt LEFT_COMMAND LANGUAGE_2  &lt_to_layer_0 2 SPACE  &mt LEFT_ALT LC(LANGUAGE_1)      &kp BACKSPACE  &lt 1 ENTER                             &trans
             >;
 
             sensor-bindings = <&encoder_msc_down_up>;
