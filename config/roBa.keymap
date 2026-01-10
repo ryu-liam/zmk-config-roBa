@@ -71,11 +71,6 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
         };
-
-        eq {
-            bindings = <&kp EQUAL>;
-            key-positions = <24 25>;
-        };
     };
 
     macros {
