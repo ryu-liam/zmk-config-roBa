@@ -71,6 +71,11 @@
             bindings = <&kp DOUBLE_QUOTES>;
             key-positions = <20 21>;
         };
+
+        left_clicj {
+            bindings = <&mkp LCLK>;
+            key-positions = <16 17>;
+        };
     };
 
     macros {
