@@ -9,13 +9,14 @@
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 80
 
 &mt {
-    flavor = "balanced";
+    flavor = "tap-preferred";
     quick-tap-ms = <150>;
     tapping-term-ms = <180>;
 };
 
 &trackball {
-    automouse-layer = <4>;
+    // automouse-layer = <4>;
+
     scroll-layers = <2>;
 
     // arrows {
