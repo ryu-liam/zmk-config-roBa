@@ -113,6 +113,11 @@
             key-positions = <20 21>;
         };
 
+        language_switch {
+            bindings = <&kp LG(SPACE)>;
+            key-positions = <13 14>;
+        };
+
         left_click {
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
