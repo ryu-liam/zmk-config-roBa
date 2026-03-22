@@ -68,12 +68,52 @@
             key-positions = <0 1>;
         };
 
-        double_quotation {
-            bindings = <&kp DOUBLE_QUOTES>;
+        backtick {
+            bindings = <&kp GRAVE>;
+            key-positions = <1 2>;
+        };
+
+        exclamation {
+            bindings = <&kp EXCLAMATION>;
+            key-positions = <2 3>;
+        };
+
+        at_sign {
+            bindings = <&kp AT_SIGN>;
+            key-positions = <3 4>;
+        };
+
+        left_parenthesis {
+            bindings = <&kp LEFT_PARENTHESIS>;
+            key-positions = <6 7>;
+        };
+
+        right_parenthesis {
+            bindings = <&kp RIGHT_PARENTHESIS>;
+            key-positions = <7 8>;
+        };
+
+        ampersand {
+            bindings = <&kp AMPERSAND>;
+            key-positions = <8 9>;
+        };
+
+        left_bracket {
+            bindings = <&kp LEFT_BRACKET>;
+            key-positions = <18 19>;
+        };
+
+        right_bracket {
+            bindings = <&kp RIGHT_BRACKET>;
+            key-positions = <19 20>;
+        };
+
+        single_quote {
+            bindings = <&kp SINGLE_QUOTE>;
             key-positions = <20 21>;
         };
 
-        left_clicj {
+        left_click {
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
         };
