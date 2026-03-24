@@ -118,6 +118,11 @@
             key-positions = <13 14>;
         };
 
+        cmd_enter {
+            bindings = <&kp LG(ENTER)>;
+            key-positions = <17 18>;
+        };
+
         left_click {
             bindings = <&mkp LCLK>;
             key-positions = <16 17>;
